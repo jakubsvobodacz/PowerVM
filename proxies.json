@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "proxy1": {
+            "matchCondition": {
+                "methods": [ "GET" ],
+                "route": "/{Action}/{Context}/{ResourceGroupName}/{VMName}"
+            },
+            "backendUri": "https://costoptimizationpoc.azurewebsites.net/StopVM"
+        }
+    }
+}
